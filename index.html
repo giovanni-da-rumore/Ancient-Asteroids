@@ -39,6 +39,15 @@
       var width = canvasEl.width = window.innerWidth;
       var game = new Asteroids.Game(width, height);
       new Asteroids.GameView(game, ctx).start();
+
+
+      $(window).resize(function() {
+        debugger;
+        game.dimY =  canvasEl.height = window.innerHeight;
+        game.dimX = canvasEl.width = window.innerWidth;
+      });
+
+
     </script>
   </body>
 </html>
