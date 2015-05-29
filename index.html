@@ -8,7 +8,7 @@
     <style type = "text/css">
       canvas {
         background: #282e27;
-        background: #C1CDCD;
+        background: "./images/taormina_2.jpg"
       }
 
       body {
@@ -19,6 +19,7 @@
       }
 
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="bin/keymaster.js"></script>
     <script src="lib/movingObject.js"></script>
     <script src="lib/utils.js"></script>
@@ -28,7 +29,6 @@
     <script src="lib/game.js"></script>
     <script src="lib/gameView.js"></script>
     <script src="lib/bullet.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 
 
@@ -42,11 +42,9 @@
 
 
       $(window).resize(function() {
-        debugger;
         game.dimY =  canvasEl.height = window.innerHeight;
         game.dimX = canvasEl.width = window.innerWidth;
       });
-
 
     </script>
   </body>
