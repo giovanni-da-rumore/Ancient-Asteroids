@@ -4,11 +4,24 @@
   </head>
   <body>
 
-    <canvas id="game-canvas"></canvas>
+    <main class="main-window">
+      <canvas id="game-canvas">
+      </canvas>
+      <div class="score"></div>
+      <div class="lives"></div>
+
+
+    </main>
+
+
+
     <style type = "text/css">
       canvas {
+        position: relative;
         background: #282e27;
         background: "./images/taormina_2.jpg"
+        height: 100%;
+        width: 100%;
       }
 
       body {
@@ -18,7 +31,29 @@
         margin: 0;
       }
 
+      .score {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        background: #fff;
+        border: 3px dotted blue;
+      }
+
+      .lives {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 15px;
+        background: #890000;
+        color: white;
+        border: 5px dotted #690768;
+      }
+
     </style>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="bin/keymaster.js"></script>
     <script src="lib/movingObject.js"></script>
@@ -40,11 +75,13 @@
       var game = new Asteroids.Game(width, height);
       new Asteroids.GameView(game, ctx).start();
 
-
       $(window).resize(function() {
         game.dimY =  canvasEl.height = window.innerHeight;
         game.dimX = canvasEl.width = window.innerWidth;
       });
+
+
+
 
     </script>
   </body>
