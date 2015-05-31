@@ -5,11 +5,11 @@
   <body>
 
     <main class="main-window">
+      <audio src="./music/endless.mp3" autoplay="true"></audio>
       <canvas id="game-canvas">
       </canvas>
       <div class="score"></div>
       <div class="lives"></div>
-
 
     </main>
 
@@ -48,6 +48,25 @@
         background: #890000;
         color: white;
         border: 5px dotted #690768;
+      }
+
+      embed {
+        position: absolute;
+        top: 10;
+        right: 300;
+        padding: 15px;
+        background: white;
+        z-index: 1;
+      }
+
+      audio {
+        position: absolute;
+        top: 10;
+        right: 600;
+        padding: 15px;
+        background: white;
+        z-index: 1;
+
       }
 
     </style>
