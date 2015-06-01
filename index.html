@@ -5,6 +5,7 @@
   <body>
 
     <main class="main-window">
+      <div class="curtain"></div>
       <audio class="active" src="./music/endless.mp3" controls="controls"></audio>
       <canvas id="game-canvas">
       </canvas>
@@ -118,7 +119,28 @@
         border-bottom: none;
         color: #737373;
         font-size: 16px;
+      }
 
+      .curtain {
+        position: absolute;
+        opacity: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 25%;
+        z-index: 10;
+        background: #003F87;
+        color: white;
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+        vertical-align: center;
+
+      }
+
+      .show {
+        opacity: 1;
+        -webkit-transition: opacity .6s;
 
       }
 
