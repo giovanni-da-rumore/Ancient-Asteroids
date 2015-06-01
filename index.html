@@ -5,14 +5,21 @@
   <body>
 
     <main class="main-window">
-      <audio src="./music/endless.mp3" autoplay="true" controls="controls"></audio>
-
-      <!-- n.b .currentTime = 29 (29 sec) for toggle, el.play, el.pause -->
+      <audio class="active" src="./music/endless.mp3" controls="controls"></audio>
       <canvas id="game-canvas">
       </canvas>
+
       <div class="score"></div>
       <div class="lives"></div>
-
+      <!-- autoplay="true" -->
+      <!-- n.b .currentTime = 29 (29 sec) for toggle, el.play, el.pause -->
+      <ul class="menu active">
+      <li>Press P to play/pause</li>
+      <li>Use Arrow Keys to move</li>
+      <li>Press Space Bar to shoot</li>
+      <li>Press M to play/pause music</li>
+      <li>Europe Endless, by Kraftwek: </li>
+      </ul>
     </main>
 
 
@@ -31,13 +38,14 @@
         background: #003F87;
         overflow: hidden;
         margin: 0;
+        font-size: 20px;
       }
 
       .score {
         position: absolute;
         top: 0;
         left: 0;
-        padding: 15px;
+        padding: 10px;
         background: #fff;
         border: 3px dotted blue;
       }
@@ -46,37 +54,86 @@
         position: absolute;
         top: 0;
         right: 0;
-        padding: 15px;
+        padding: 10px;
         background: #890000;
         color: white;
         border: 5px dotted #690768;
       }
 
-      embed {
-        position: absolute;
-        top: 10;
-        right: 300;
-        padding: 15px;
-        background: white;
-        z-index: 1;
-      }
-
       audio {
         position: absolute;
-        top: 10;
-        right: 600;
-        padding: 15px;
+        top: 334px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 13px;
         background: white;
         z-index: 1;
+        display: none;
+        background: #690768;
+        border-right: 10px solid #ccc;
+        border-left: 10px solid #ccc;
+        border-bottom: 10px solid #ccc;
+        border-radius: 3px;
 
       }
+
+
+
+
+
+      .menu {
+        position: absolute;
+        padding: 20px;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        font-size: 25px;
+        color: blue;
+        display: none;
+        z-index: 1;
+        border-top: 10px solid #ccc;
+        border-left: 10px solid #ccc;
+        border-right: 10px solid #ccc;
+        border-radius: 3px;
+      }
+
+      .active {
+        display: block;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0px
+
+      }
+
+      .menu li {
+        padding: 5px 0px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .menu li:last-child {
+        border-bottom: none;
+        color: #737373;
+        font-size: 16px;
+
+
+      }
+
+
+
+
+
+
+
 
     </style>
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="bin/keymaster.js"></script>
     <script src="lib/movingObject.js"></script>
     <script src="lib/utils.js"></script>
     <script src="lib/asteroid.js"></script>
