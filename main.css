@@ -1,0 +1,152 @@
+html, h1, body, ul {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  font-weight: inherit;
+
+}
+
+
+h1 {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-43%);
+  font-weight: bold;
+  font-size: 55px;
+  color: #003F87;
+  -webkit-text-stroke: 1px #fff;
+  display: none;
+
+}
+
+
+canvas {
+  position: relative;
+  background: #282e27;
+  background: "./images/taormina_2.jpg"
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  background: #003F87;
+  overflow: hidden;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Caesar Dressing', cursive;
+  letter-spacing: 1.3;
+}
+
+.score {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background: #003F87;
+  color: #fff;
+  border: 4px dotted #fff;
+  opacity: 0.7;
+}
+
+.lives {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background: #003F87;
+  color: white;
+  border: 5px dotted #690768;
+  border: 4px dotted #fff;
+  opacity: 0.7;
+}
+
+audio {
+  position: absolute;
+  top: 395px;
+  left: 50%;
+  transform: translateX(-43%);
+  padding: 15px 38px;
+  padding-top: 20px;
+  z-index: 1;
+  display: none;
+  background: #003F87;
+  border-right: 10px solid #ccc;
+  border-left: 10px solid #ccc;
+  border-bottom: 10px solid #ccc;
+  border-radius: 3px;
+
+}
+
+.menu {
+  position: absolute;
+  padding: 20px;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-43%);
+  background: #fff;
+  font-size: 25px;
+  color: #003F87;
+  display: none;
+  z-index: 1;
+  border: 10px solid #ccc;
+  border-top: 10px solid #ccc;
+  border-left: 10px solid #ccc;
+  border-right: 10px solid #ccc;
+  border-radius: 3px;
+}
+
+.active {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.menu li {
+  padding: 5px 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+  color: #737373;
+  font-size: 16px;
+}
+
+.curtain {
+  position: absolute;
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 15%;
+  background: #003F87;
+  color: white;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  line-height: 2.1;
+  letter-spacing: 6;
+
+}
+
+.show {
+  opacity: 1;
+  -webkit-transition: opacity .6s;
+  z-index: 10;
+
+}
+
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}

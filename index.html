@@ -1,183 +1,27 @@
 <html>
   <head>
-    <title></title>
+    <title>Ancient Asteroids</title>
   </head>
   <body>
-    <link href='http://fonts.googleapis.com/css?family=Expletus+Sans:400italic,700,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>
     <main class="main-window">
       <div class="curtain"></div>
-      <audio class="active" id="audio-player" src="./music/endless.mp3" controls="controls"></audio>
-      <canvas id="game-canvas">
-      </canvas>
+      <canvas id="game-canvas"></canvas>
 
       <div class="score"></div>
       <div class="lives"></div>
-      <!-- autoplay="true" -->
-      <!-- n.b .currentTime = 29 (29 sec) for toggle, el.play, el.pause -->
+      <h1 class="active">War Among the Ruins</h1>
+      <audio class="active" id="audio-player" src="./music/endless.mp3" controls="controls"></audio>
       <ul class="menu active">
-      <li>Press P to play/pause</li>
-      <li>Use Arrow Keys to move</li>
-      <li>Press Space Bar to shoot</li>
-      <li>Press M to play/pause music</li>
-      <li>Europe Endless, by Kraftwek: </li>
+        <li>Press P to play/pause</li>
+        <li>Use Arrow Keys to move</li>
+        <li>Press Space Bar to shoot</li>
+        <li>Press M to play/pause music</li>
+        <li>Europe Endless, by Kraftwek: </li>
       </ul>
+  </main>
 
-    </main>
-
-
-
-    <style type = "text/css">
-
-      html {
-        font-family: inherit;
-        font-size: inherit;
-        padding: 0;
-        margin: 0;
-        font-weight: inherit;
-
-
-      }
-
-
-      canvas {
-        position: relative;
-        background: #282e27;
-        background: "./images/taormina_2.jpg"
-        height: 100%;
-        width: 100%;
-      }
-
-      body {
-        padding: 0;
-        background: #003F87;
-        overflow: hidden;
-        margin: 0;
-        font-size: 20px;
-        font-family: 'Caesar Dressing', cursive;
-        letter-spacing: 1.3;
-      }
-
-      .score {
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 10px;
-        background: #003F87;
-        color: #fff;
-        border: 4px dotted #fff;
-        opacity: 0.7;
-      }
-
-      .lives {
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 10px;
-        background: #003F87;
-        color: white;
-        border: 5px dotted #690768;
-        border: 4px dotted #fff;
-        opacity: 0.7;
-      }
-
-      audio {
-        position: absolute;
-        top: 338px;
-        left: 50%;
-        transform: translateX(-39%);
-        padding: 15px 38px;
-        padding-top: 20px;
-        background: white;
-        z-index: 1;
-        display: none;
-        background: #690768;
-        background: #003F87;
-        border-right: 10px solid #ccc;
-        border-left: 10px solid #ccc;
-        border-bottom: 10px solid #ccc;
-        border-radius: 3px;
-
-      }
-
-
-
-
-
-      .menu {
-        position: absolute;
-        padding: 20px;
-        top: 100px;
-        left: 50%;
-        transform: translateX(-39%);
-        background: #fff;
-        font-size: 25px;
-        color: #003F87;
-        display: none;
-        z-index: 1;
-        border-top: 10px solid #ccc;
-        border-left: 10px solid #ccc;
-        border-right: 10px solid #ccc;
-        border-radius: 3px;
-      }
-
-      .active {
-        display: block;
-      }
-
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0px
-
-      }
-
-      .menu li {
-        padding: 5px 0px;
-        border-bottom: 1px solid #ccc;
-      }
-
-      .menu li:last-child {
-        border-bottom: none;
-        color: #737373;
-        font-size: 16px;
-      }
-
-      .curtain {
-        position: absolute;
-        opacity: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        padding-top: 15%;
-        background: #003F87;
-        color: white;
-        font-weight: bold;
-        font-size: 48px;
-        text-align: center;
-        line-height: 2.1;
-        letter-spacing: 6;
-
-      }
-
-      .show {
-        opacity: 1;
-        -webkit-transition: opacity .6s;
-        z-index: 10;
-
-      }
-
-
-
-
-
-
-
-
-    </style>
-
-
-
+    <link href='http://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="lib/movingObject.js"></script>
     <script src="lib/utils.js"></script>
@@ -187,8 +31,6 @@
     <script src="lib/game.js"></script>
     <script src="lib/gameView.js"></script>
     <script src="lib/bullet.js"></script>
-
-
 
     <script>
       var canvasEl = document.getElementById("game-canvas");
@@ -202,9 +44,6 @@
         game.dimY =  canvasEl.height = window.innerHeight;
         game.dimX = canvasEl.width = window.innerWidth;
       });
-
-
-
 
     </script>
   </body>
