@@ -1,7 +1,7 @@
 # Ancient Asteroids
 
-> What mad pursuit? What struggle to escape?
-What wild ecstacy?
+> "What mad pursuit? What struggle to escape?
+What wild ecstacy?"
 
 
 [Live Link](giovanni-da-rumore.github.io/Ancient-Asteroids)
@@ -20,8 +20,8 @@ can be found in the [images folder](./iamges).
 The game's controls are rather simple: one uses the arrow keys to move the ship
 and presses the spacebar to shoot. For menus, one presses P to pause or play the game and M to pause or play it's background music, Kraftwerk's *Europe Endless.*
 
-> Heard melodies are sweet, but those unheard
-Are sweeter; therefore, ye soft pipes, play on;
+> "Heard melodies are sweet, but those unheard
+Are sweeter; therefore, ye soft pipes, play on;"
 
 To complete a level, the player must destroy all of the
 "asteroids" or vases, upon she will be taken to another idyllic scene for more destruction.
