@@ -4,7 +4,7 @@
 What wild ecstacy?"
 
 
-[Live Link](giovanni-da-rumore.github.io/Ancient-Asteroids)
+[Live Link](http::giovanni-da-rumore.github.io/Ancient-Asteroids)
 
 # About
 
@@ -14,7 +14,7 @@ Ancient Greek ruins (mostly temples) and shoots Ancient Greek vase paintings.
 
 The levels 7 levels are Segesta, Paestum, Athens, Selinunte, Agrigento, Taormina and Delphi.
 Background images and red-figure vase paintings (all of which are images of real greek vases)
-can be found in the [images folder](./iamges).
+can be found in the [images folder](/iamges).
 
 
 The game's controls are rather simple: one uses the arrow keys to move the ship
