@@ -7,21 +7,7 @@ html, h1, body, ul {
 
 }
 
-/*
-@media (max-width: 900px) {
 
-  h1 {
-    display: block;
-    width: 500px;
-    height: 100px;
-    overflow: none;
-    color: red;
-
-
-  }
-
-
-}*/
 
 
 h1 {
@@ -42,7 +28,7 @@ h1 {
 canvas {
   position: relative;
   background: #282e27;
-  background: "./images/taormina_2.jpg"
+  background: "./images/taormina_2.jpg";
   height: 100%;
   width: 100%;
 }
