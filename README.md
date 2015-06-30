@@ -1,7 +1,7 @@
 # Ancient Asteroids
 
 > "What mad pursuit? What struggle to escape?
-What wild ecstacy?"
+What wild ecstasy?"
 
 
 [Live Link][gitlink]
