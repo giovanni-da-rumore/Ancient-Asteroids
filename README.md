@@ -31,8 +31,8 @@ To complete a level, the player must destroy all of the
 #Code
 
 Ancient Asteroids is built primarily through Javascript and HTML5 Canvas.
-It uses Jquery for click events, such as pausing, playing, moving and shooting.
-Levels are done through CSS and Jquery transition events and pausing is done through using Jquery to toggle a modal.
+It uses jQuery for click events, such as pausing, playing, moving and shooting.
+Levels are done through CSS and jQuery transition events and pausing is done through using jQuery to toggle a modal.
 Positioning is done through Canvas drawing and basic trig.
 
 
