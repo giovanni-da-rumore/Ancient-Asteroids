@@ -13,14 +13,13 @@ html, h1, body, ul {
 h1 {
   position: absolute;
   top: 60px;
-  left: 50%;
-  transform: translateX(-40%);
   font-weight: bold;
   font-size: 55px;
   color: #003F87;
   -webkit-text-stroke: 1px #fff;
   display: none;
-  width: 600px;
+  width: 100%;
+  text-align: center;
 
 }
 
@@ -70,9 +69,8 @@ body {
 audio {
   position: absolute;
   top: 396px;
-  left: 50%;
   width: 302px;
-  transform: translateX(-43%);
+  left: calc(50% - 199px);
   padding: 15px 38px;
   padding-top: 20px;
   z-index: 1;
@@ -90,9 +88,8 @@ audio {
   position: absolute;
   padding: 20px;
   top: 150px;
-  left: 50%;
   width: 338px;
-  transform: translateX(-43%);
+  left: calc(50% - 199px);
   background: #fff;
   font-size: 25px;
   color: #003F87;
